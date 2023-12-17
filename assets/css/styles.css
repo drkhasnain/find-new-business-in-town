@@ -1,0 +1,265 @@
+.polygon {
+  clip-path: polygon(0 1%, 100% 0%, 100% 88%, 0 100%);
+}
+
+.slanted_div {
+  position: relative;
+  width: 100%;
+}
+
+.slanted_div:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  bottom: 0;
+  background: inherit;
+}
+
+#browse_business:after {
+  transform-origin: 0%;
+  transform: skewy(-4deg);
+  /*background-color: red;*/
+}
+
+#new_business:after {
+  transform-origin: 0%;
+  transform: skewy(-4deg);
+  /*background-color: green;*/
+}
+
+#footer:after {
+  transform-origin: 0%;
+  transform: skewy(-4deg);
+}
+
+#browse_business {
+  z-index: 10;
+}
+
+#new_business {
+  z-index: 10;
+}
+
+#footer {
+  z-index: 10;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#main_photo .content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#main_photo h1 {
+  color: white;
+  font-size: 2.6rem;
+  max-width: 80%;
+}
+
+#main_photo p {
+  color: rgb(191,191,191);
+  font-weight: 600;
+  font-size: 1.1rem;
+  max-width: 60%;
+  padding-bottom: 2.0rem;
+}
+
+@media (max-width: 460px) {
+  #main_photo p {
+    color: rgb(191,191,191);
+    font-weight: 600;
+    font-size: 1.1rem;
+    max-width: 85%;
+    padding-bottom: 2.0rem;
+  }
+}
+
+.form-control.inputsearch {
+  background: #EEF2F8;
+}
+
+.search_form {
+  margin: 0rem;
+  width: 50%;
+}
+
+.form-row {
+  justify-content: center;
+}
+
+.button {
+  background: #00ba94;
+  border: none;
+}
+
+.button:hover {
+  background: #98eddb;
+  border: none;
+}
+
+.py-10 {
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+}
+
+.bg-light {
+  background-color: #F2F6FC !important;
+}
+
+#browse_business h1 {
+  color: blue;
+  font-size: 0.8rem;
+}
+
+#browse_business p {
+  color: rgb(105,99,99);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.card.lift {
+  text-decoration: none;
+}
+
+#browse_business .card {
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: .35rem;
+}
+
+.card:hover {
+  /*transition: transform .15s ease-in-out,box-shadow .15s ease-in-out;*/
+  transform: scale(1.02);
+}
+
+#browse_business .card-img-top {
+  flex-shrink: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+#browse_business .card-title {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #363d47;
+}
+
+.item.social h1 {
+  font-size: 1.5rem;
+}
+
+#new_business h1 {
+  color: blue;
+  font-size: 0.8rem;
+}
+
+#new_business p {
+  color: rgb(105,99,99);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+#new_business .card {
+  overflow: hidden;
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: .45rem;
+}
+
+.mt-n15 {
+  margin-top: -10rem!important;
+}
+
+@media (max-width: 460px) {
+  .margin {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.margin {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.mb-10 {
+  margin-bottom: 6rem!important;
+}
+
+#abovecard h4 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #363d47;
+  font-size: 1.4rem;
+}
+
+#abovecard p {
+  color: #a7aeb8!important;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.sign_up .form-control {
+  background-color: #EEF2F8;
+  border-color: #eef2f8;
+  border: 1px solid #ecf1f9;
+  border-radius: 1rem;
+}
+
+.form-control::placeholder {
+  color: #a7aeb8!important;
+}
+
+.text-yellow {
+  color: #F4A100;
+}
+
+#belowcards .card-title {
+  color: rgb(41,40,40);
+  margin-top: 12px;
+}
+
+#belowcards .small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#belowcards .card-footer {
+  padding: 1rem 1.35rem;
+  background-color: #f2f5f8;
+  border-top: 0 solid rgba(0,0,0,.125);
+}
+
+#belowcards .card-footer p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(11,11,11,0.5);
+}
+
